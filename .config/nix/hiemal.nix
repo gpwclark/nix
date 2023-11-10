@@ -35,4 +35,5 @@ with import <nixpkgs> {}; [
   syncthing # to sync things across computers.
   meld # better visual difftool.
   vcsh # config management
+  cmake # build tool
 ]
