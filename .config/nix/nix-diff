@@ -35,7 +35,7 @@ while read -r name version; do
     echo -e "\033[32mA ${name} ${version}\033[0m"
     ret=1
   fi
-done < <(query -af "${HOME}/.dotfiles/env.nix")
+done < <(query -af "${HOME}/.config/nix/env.nix")
 
 for name in "${!cur[@]}"; do
   echo -e "\033[31mD ${name} ${cur[${name}]}\033[0m"
@@ -45,7 +45,7 @@ done
 if [[ ${ret} -ne 0 ]]; then
   # Disable SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
   # shellcheck disable=SC2016
-  echo 'Run `nix-env -irf ~/.dotfiles/env.nix` to make these changes'
+  echo 'Run `nix-env -irf ~/.config/nix/env.nix` to make these changes'
 fi
 
 exit "${ret}"
