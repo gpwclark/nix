@@ -46,6 +46,8 @@ if [[ ${ret} -ne 0 ]]; then
   # Disable SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
   # shellcheck disable=SC2016
   echo 'Run `nix-env -irf ~/.config/nix/env.nix` to make these changes'
+else
+  echo 'There is nothing to do!'
 fi
 
 exit "${ret}"

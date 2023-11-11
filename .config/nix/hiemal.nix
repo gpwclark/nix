@@ -36,4 +36,8 @@ with import <nixpkgs> {}; [
   meld # better visual difftool.
   vcsh # config management
   cmake # build tool
+  git-crypt # commit secerts in the open!
+  nerdfonts # fonts
+  nerd-font-patcher # fonts for lsd
+  iterm2 # terminal
 ]
