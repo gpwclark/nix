@@ -40,4 +40,11 @@ with import <nixpkgs> {}; [
   nerdfonts # fonts
   nerd-font-patcher # fonts for lsd
   iterm2 # terminal
+  sbcl # steel bank common lisp
+  rclone # rsync but for cloud backup.
+  git-crypt # encryption for secrets in git repos.
+  git-repo # android multi-git repo management tool
+  docker-compose # docker orechestration tool
+  gnupg # good protection
+  pinentry # for gnupg passphrase entry on mac
 ]
