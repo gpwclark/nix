@@ -47,4 +47,5 @@ with import <nixpkgs> {}; [
   docker-compose # docker orechestration tool
   gnupg # good protection
   pinentry # for gnupg passphrase entry on mac
+  sqlite # very useful database for almost everyone because RU really at scale?
 ]
