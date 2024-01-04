@@ -48,4 +48,6 @@ with import <nixpkgs> {}; [
   gnupg # good protection
   pinentry # for gnupg passphrase entry on mac
   sqlite # very useful database for almost everyone because RU really at scale?
+  alacritty # A cross-platform, GPU-accelerated terminal emulator
+  android-tools # adb & friends!
 ]
