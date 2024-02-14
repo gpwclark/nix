@@ -50,4 +50,5 @@ with import <nixpkgs> {}; [
   sqlite # very useful database for almost everyone because RU really at scale?
   alacritty # A cross-platform, GPU-accelerated terminal emulator
   android-tools # adb & friends!
+  pipenv # python environemnts AND dep locking
 ]
