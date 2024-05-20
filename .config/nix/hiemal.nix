@@ -44,6 +44,7 @@ with import <nixpkgs> {}; [
   rclone # rsync but for cloud backup.
   git-crypt # encryption for secrets in git repos.
   git-repo # android multi-git repo management tool
+  docker # container orchestation tool
   docker-compose # docker orechestration tool
   gnupg # good protection
   pinentry # for gnupg passphrase entry on mac
@@ -51,4 +52,11 @@ with import <nixpkgs> {}; [
   alacritty # A cross-platform, GPU-accelerated terminal emulator
   android-tools # adb & friends!
   pipenv # python environemnts AND dep locking
+  gnuplot #plotting
+  colima # container runtimes, useful for x86 emulation
+  R # stats programming language
+  rPackages.renv # R version management
+  poppler_utils # pfg utils -- pdftotext pdfimages pdffonts pdftocairo pdfattach pdfsig pdftohtml pdftops pdfunite pdftoppm pdfseparate pdfinfo pdfdetach
+  youtube-dl-light #download youtube
+  speedtest-cli # speedtest
 ]
