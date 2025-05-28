@@ -59,4 +59,5 @@ with import <nixpkgs> {}; [
   poppler_utils # pfg utils -- pdftotext pdfimages pdffonts pdftocairo pdfattach pdfsig pdftohtml pdftops pdfunite pdftoppm pdfseparate pdfinfo pdfdetach
   youtube-dl-light #download youtube
   speedtest-cli # speedtest
+  svn2git
 ]
