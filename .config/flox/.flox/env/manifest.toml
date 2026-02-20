@@ -1,0 +1,138 @@
+#
+# This is a Flox environment manifest.
+# Visit flox.dev/docs/concepts/manifest/
+# or see flox-edit(1), manifest.toml(5) for more information.
+# 
+# Flox manifest version managed by Flox CLI
+version = 1
+
+# List packages you wish to install in your environment inside
+# the `[install]` section.
+[install]
+tmux = { pkg-path="tmux", pkg-group="host"} # terminal multiplexer
+ripgrep = { pkg-path="ripgrep", pkg-group="host"} # better grep
+poppler_utils = { pkg-path="poppler_utils", pkg-group="host"} # pdf utils
+earthly = { pkg-path="earthly", pkg-group="host"} # build tool
+coreutils-full = { pkg-path="coreutils-full", pkg-group="host"} # The GNU Core Utilities are the basic file, shell and text manipulation utilities of the GNU operating system.
+fd = { pkg-path="fd", pkg-group="host"} # simpler alternative to find
+fq = { pkg-path="fq", pkg-group="host"} # Tool, language and decoders for working with binary data.
+neovim = { pkg-path="neovim", pkg-group="host"} # new vim long live bram
+pwgen = { pkg-path="pwgen", pkg-group="host"} # password generator
+shellcheck = { pkg-path="shellcheck", pkg-group="host"} # bash linter
+socat = { pkg-path="socat", pkg-group="host"} # socket cat
+tree = { pkg-path="tree", pkg-group="host"} # ls-style tree visualizer
+git = { pkg-path="git", pkg-group="host"} # scm
+mr = { pkg-path="mr", pkg-group="host"} # scm
+zsh-syntax-highlighting = { pkg-path="zsh-syntax-highlighting", pkg-group="host" }# zsh syntax highlighting
+lsd = { pkg-path="lsd", pkg-group="host" }# better ls
+htop = { pkg-path="htop", pkg-group="host" }# linux system monitoring
+feh = { pkg-path="feh", pkg-group="host" }# simple image viewer
+graphviz = { pkg-path="graphviz", pkg-group="host" }# dot graphs!
+git-filter-repo.pkg-path = "git-filter-repo"
+rlwrap = { pkg-path="rlwrap", pkg-group="host" }# real line wrap for line editing joy.
+fzf = { pkg-path="fzf", pkg-group="host" }# fuzzy file finder
+git-crypt = { pkg-path="git-crypt", pkg-group="host" }# git encryption
+meld = { pkg-path="meld", pkg-group="host" }# file diff viewer
+vcsh = { pkg-path="vcsh", pkg-group="host" }# scm
+gnupg = { pkg-path="gnupg", pkg-group="host" }# encryption
+pinentry = { pkg-path="pinentry", pkg-group="host" }# for gnupg passphrase entry on mac
+rclone = { pkg-path="rclone", pkg-group="host" }# rsync but for cloud backup.
+nerdfonts = { pkg-path="nerdfonts", pkg-group="host" }# fonts for lsd
+nerd-font-patcher = { pkg-path="nerd-font-patcher", pkg-group="host" }# fonts for lsd
+git-repo = { pkg-path="git-repo", pkg-group="host" }# scm of scm type
+sqlite = { pkg-path="sqlite", pkg-group="host" }# sql db!
+gnuplot = { pkg-path="gnuplot", pkg-group="host" }# graphing
+alacritty = { pkg-path="alacritty", pkg-group="host" }# A cross-platform, GPU-accelerated terminal emulator
+jq = { pkg-path="jq", pkg-group="host" }# query language for json
+cmake = { pkg-path="cmake", pkg-group="host" }# build c
+sbcl = { pkg-path="sbcl", pkg-group="host" }# steel bank common lisp
+pipenv = { pkg-path="pipenv", pkg-group="python" }# python environment and dep locking
+R = { pkg-path="R", pkg-group="host" }# R programming language
+youtube-dl-light = { pkg-path="youtube-dl-light", pkg-group="host" }# youtube download
+speedtest-cli = { pkg-path="speedtest-cli", pkg-group="host" }# test internet speed
+svn2git = { pkg-path="svn2git", pkg-group="host" }# scm
+wget = { pkg-path="wget", pkg-group="host" }# simple http fetcher
+ccache = { pkg-path="ccache", pkg-group="host" }# FIX ME
+colima = { pkg-path="colima", pkg-group="host" } # some mac or x86 emulator thing
+xz = { pkg-path="xz", pkg-group="host" }#FIX ME
+zed-editor = { pkg-path="zed-editor", pkg-group="mac" } # try out new editor
+parinfer-rust = { pkg-path="vimPlugins.parinfer-rust", pkg-group="host" } # lisp style editing in vim
+
+emacs-macport = { pkg-path="emacs-macport", pkg-group="host", systems=["aarch64-darwin", "x86_64-darwin"] }# emacs
+
+imagemagick = { pkg-path="imagemagick", pkg-group="host" }# image editing
+pkg-config = { pkg-path="pkg-config", pkg-group="host" }# Tool that allows packages to find out information about other packages
+
+llvm = { pkg-path="llvm", pkg-group="host" }# compiler
+
+clang = { pkg-path="clang", pkg-group="clang"} # Compiler
+
+# nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
+nodejs = { pkg-path = "nodejs", pkg-group = "node-toolchain" }
+claude-code = { pkg-path = "claude-code", pkg-group = "node-toolchain" }
+python3 = { pkg-path="python3", pkg-group="python" }# python!
+uv.pkg-path = "uv" # best python tooling
+watch.pkg-path = "watch" # unix cli utility
+terminal-notifier.pkg-path = "terminal-notifier"
+terminal-notifier.systems = ["aarch64-darwin", "x86_64-darwin"]
+libnbd.pkg-path = "libnbd" # nbd is network block device
+libnbd.systems = ["aarch64-linux", "x86_64-linux"]
+nbdkit.pkg-path = "nbdkit"  # nbd is network block device
+nbdkit.systems = ["aarch64-linux", "x86_64-linux"]
+asciidoc.pkg-path = "asciidoc" # Text-based document generation system
+xmlto.pkg-path = "xmlto" # Front-end to an XSL toolchain
+zfs.pkg-path = "zfs"  # i <3 zfs 4 filezzzz
+zfs.systems = ["aarch64-linux", "x86_64-linux"]
+turso-cli.pkg-path = "turso-cli" # rust rewrite sqlite
+aspell.pkg-path = "aspell" # dict
+en.pkg-path = "aspellDicts.en" #english
+zellij.pkg-path = "zellij" # rust based screen multiplexer
+mold.pkg-path = "mold" # mold LD linker
+gh.pkg-path = "gh" # gh cli
+skim.pkg-path = "skim" # rust based fuzzy finder
+bat.pkg-path = "bat" # new cat, w/ git integration
+
+# Set environment variables in the `[vars]` section. These variables may not
+# reference one another, and are added to the environment without first
+# expanding them. They are available for use in the `[profile]` and `[hook]`
+# scripts.
+[vars]
+# message = "Howdy"
+
+# The `hook.on-activate` script is run by the *bash* shell immediately upon
+# activating an environment, and will not be invoked if Flox detects that the
+# environment has previously been activated. Variables set by the script will
+# be inherited by `[profile]` scripts defined below. Note that any stdout
+# generated by the script will be redirected to stderr.
+[hook]
+# on-activate = '''
+#   # Set variables, create files and directories
+#   venv_dir="$(mktemp -d)"
+#   export venv_dir
+#
+#   # Perform initialization steps, e.g. create a python venv
+#   python -m venv "$venv_dir"
+# '''
+
+# Scripts defined in the `[profile]` section are *sourced* by *your shell* and
+# inherit environment variables set in the `[vars]` section and by `[hook]` scripts.
+# The `profile.common` script is sourced by all shells and special care should be
+# taken to ensure compatibility with all shells, after which exactly one of
+# `profile.{bash,fish,tcsh,zsh}` is sourced by the corresponding shell.
+[profile]
+# common = '''
+#   echo "it's gettin' flox in here"
+# '''
+
+# The `[services]` section of the manifest allows you to define services.
+# Services defined here use the packages provided by the `[install]` section
+# and any variables you've defined in the `[vars]` section or `hook.on-activate` script.
+[services]
+# postgres.command = "postgres --config-file=pg.conf"
+
+# Additional options can be set in the `[options]` section. Refer to
+# manifest.toml(5) for a list of available options.
+[options]
+systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
+# Uncomment to disable CUDA detection.
+# cuda-detection = false

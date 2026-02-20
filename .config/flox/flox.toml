@@ -1,0 +1,3 @@
+[trusted_environments]
+"gpwclark/jank" = "trust"
+"price/jank" = "trust"
